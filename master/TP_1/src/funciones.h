@@ -95,10 +95,11 @@ int menu(void);
 /**
  * @fn long int factorial1(int numero1);
  *
- * @brief funcion que realiza el factorial del primer operando
+ * @brief funcion que realiza el factorial del operando
  *
  * @param numero
- * @return
+ *
+ * @return devuelve el resultado del factorial de dicho operando
  */
 long int factorial(int numero);
 

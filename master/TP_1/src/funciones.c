@@ -17,6 +17,7 @@ int menu(void)
 	printf("\n3.Realizar todas las operaciones");
 	printf("\n4. Informar el resultado de las operaciones");
 	printf("\n5. Salir");
+	printf("\nIngrese una opción: ");
 
 	scanf("%d", &opcion);
 
@@ -27,7 +28,7 @@ float num1(void)
 {
 	float numero1;
 
-	printf("\nIngrese el primer operando");
+	printf("\nIngrese el primer operando: ");
 	scanf("%f", &numero1);
 
 	return numero1;
@@ -37,7 +38,7 @@ float num2(void)
 {
 	float numero2;
 
-	printf("\nIngrese el segundo operando");
+	printf("\nIngrese el segundo operando: ");
 	scanf("%f", &numero2);
 
 	return numero2;
@@ -79,3 +80,17 @@ float multiplicar(float numero1, float numero2)
 	return producto;
 }
 
+long factorial(int numero)
+{
+	long int fact;
+
+	if(numero < 1)
+	{
+		fact = 1;
+	}else
+	{
+		fact = numero * factorial(numero - 1);
+	}
+
+	return fact;
+}

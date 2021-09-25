@@ -65,7 +65,7 @@ int main(void)
 					division = dividir(operando1,operando2);
 					factorialN1 = factorial(operando1);
 					factorialN2 = factorial(operando2);
-					printf("Preparando los resultados");
+					printf("\nPreparando los resultados");
 				}
 				else
 				{
